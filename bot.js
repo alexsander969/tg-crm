@@ -121,6 +121,12 @@ main().catch((error) => {
 
 const port = process.env.PORT || 3000;
 http.createServer((req, res) => {
+  if (req.url === "/health") {
+    res.writeHead(200, { "Content-Type": "application/json" });
+    res.end(JSON.stringify({ status: "ok" }));
+    return;
+  }
+
   res.writeHead(200);
   res.end("CRM Bot is alive");
 }).listen(port, () => console.log(`Server listening on port ${port}`));
