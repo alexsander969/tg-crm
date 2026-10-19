@@ -1,0 +1,19 @@
+{
+  "name": "tg-crm",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "type": "module",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^18.0.8",
+    "grammy": "^1.46.0",
+    "node-fetch": "^3.3.2"
+  }
+}
